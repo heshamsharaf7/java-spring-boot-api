@@ -1,0 +1,18 @@
+package itep.resturant.service.entity.local;
+
+public enum Permission {
+    SAVE_ONE_CUISINE,
+    GET_ALL_ORDERS,
+    Change_ORDER_Status,
+    DELETE_ONE_CUISINE,
+    UPDATE_ONE_CUISINE,
+    SAVE_ONE_MENU,
+    DELETE_ONE_MENU,
+    UPDATE_ONE_MENU,
+    SAVE_ONE_ITEM,
+    DELETE_ONE_ITEM,
+    UPDATE_ONE_ITEM,
+    SAVE_ONE_RESTAURANT,
+    DELETE_ONE_RESTAURANT,
+    UPDATE_ONE_RESTAURANT
+}

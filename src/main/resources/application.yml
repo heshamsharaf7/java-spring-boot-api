@@ -1,0 +1,47 @@
+spring:
+  application:
+    name: spring-security
+  jpa:
+    # Provide database platform that is being used
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      # New database is created when application starts and destroyed when application is stopped
+      ddl-auto: create
+    # Show sql when spring data jpa performs query
+    show-sql: true
+    properties:
+      hibernate:
+        # Format queries
+        format_sql: true
+  datasource:
+    # URL connection to database (spring-security is database name)
+    url: jdbc:postgresql://localhost:5432/restaurant_db
+    # H2 sql Driver
+    #    driver-class-name: org.h2.Driver
+    username: postgres
+    password: Abd06420803
+  h2:
+    console:
+      enabled: true
+
+  security:
+    user:
+      password=password:
+token:
+  signing:
+    key: 413F4428472B4B6250655368566D5970337336763979244226452948404D6351
+
+external:
+  api:
+    order:
+      url: http://localhost:8091/api
+      auth:
+        email: restaurant@restaurant.com
+        password : "restaurant.password"
+    driver:
+      url: http://127.0.0.1
+      auth:
+        email: sss@gmail.com
+        password: "123456"
+
+
